@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danilo Uzzoli - Profilo Professionale</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9fb;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    h1 {
+      color: #1e56a0;
+      margin-bottom: 5px;
+      font-size: 28px;
+    }
+    h2 {
+      color: #1e56a0;
+      margin: 25px 0 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #eaeaea;
+      font-size: 22px;
+    }
+    h3 {
+      margin: 15px 0 8px;
+      color: #2c3e50;
+    }
+    p, ul {
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 15px 0 25px;
+      font-size: 15px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+      padding-left: 15px;
+      border-left: 3px solid #1e56a0;
+      padding-top: 5px;
+    }
+    .date {
+      font-weight: bold;
+      color: #1e56a0;
+    }
+    .role, .degree {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .company, .school {
+      font-style: italic;
+      margin: 3px 0;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .skill-tag {
+      background: #eef4ff;
+      color: #1e56a0;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+    a {
+      color: #1e56a0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Danilo Uzzoli</h1>
+      <div class="contact-info">
+        <div class="contact-item">📍 Via Massimo Severo Giannini, 23, 00173 Roma</div>
+        <div class="contact-item">📞 +39 328 288 1034</div>
+        <div class="contact-item">✉️ <a href="mailto:danilo.uzzoli@gmail.com">danilo.uzzoli@gmail.com</a></div>
+        <div class="contact-item">💻 <a href="https://github.com/danilouzzoli" target="_blank">github.com/danilouzzoli</a></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Esperienza Professionale</h2>
+
+      <div class="experience-item">
+        <div class="date">06/2025 – oggi</div>
+        <div class="role">Docente in Java – Spring</div>
+        <div class="company">Istituto Meschini srl – Roma</div>
+        <p>Docenza su: Java SE 17, Spring Boot 3, Spring Core 6, Spring MVC, Thymeleaf, Spring JPA, Hibernate, REST, MySQL.</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="date">05/2025 – 06/2025</div>
+        <div class="role">Tutor Tecnico – Full Stack (Java/Spring)</div>
+        <div class="company">Istituto Meschini srl – Roma</div>
+        <p>Tutoraggio per sviluppo di un Portale di Lavoro con tecnologie full stack (Java/Spring/Thymeleaf/Bootstrap/MySQL).</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="date">03/2025 – 05/2025</div>
+        <div class="role">Docente Java – Spring – Full Stack</div>
+        <div class="company">Istituto Meschini srl – Roma</div>
+        <p>Copertura completa di backend Java (JDBC, Jakarta EE, JSP, Servlet, JPA, EJB), Spring Boot 3, REST, Swagger, Maven, Thymeleaf, Bootstrap 5.</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="date">01/2024 – 05/2024</div>
+        <div class="role">Docente Java – Spring – Full Stack</div>
+        <div class="company">Et Labora srl – Roma</div>
+        <p>Docenza su Java SE 17, Jakarta EE, Maven, Tomcat 10.1, Thymeleaf, MySQL.</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="date">12/2023</div>
+        <div class="role">Docente Java – Spring</div>
+        <div class="company">Logica Informatica srl – Roma</div>
+        <p>Focus su Spring Boot 3, REST, JPA, Hibernate, Thymeleaf, MySQL.</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="date">10/2023 – 11/2023</div>
+        <div class="role">Tutor Tecnico</div>
+        <div class="company">Fondazione Et Labora – Roma</div>
+        <p>Supporto allo sviluppo di un gestionale di magazzino con stack Java/Spring/Thymeleaf/MySQL.</p>
+      </div>
+
+      <!-- Altre esperienze importanti possono essere aggiunte a richiesta -->
+    </section>
+
+    <section>
+      <h2>Competenze Tecniche</h2>
+      <div class="skills">
+        <span class="skill-tag">Java SE 8/17</span>
+        <span class="skill-tag">Spring Boot 3</span>
+        <span class="skill-tag">Spring Core / MVC / REST / JPA</span>
+        <span class="skill-tag">Hibernate</span>
+        <span class="skill-tag">Jakarta EE (JSP, Servlet, JPA, EJB)</span>
+        <span class="skill-tag">MySQL / PostgreSQL</span>
+        <span class="skill-tag">Maven</span>
+        <span class="skill-tag">Thymeleaf</span>
+        <span class="skill-tag">HTML5 / CSS3 / Bootstrap 5</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Eclipse / VS Code</span>
+        <span class="skill-tag">Tomcat / TomEE</span>
+        <span class="skill-tag">REST / SOAP</span>
+        <span class="skill-tag">JUnit</span>
+        <span class="skill-tag">SEO / WordPress / WooCommerce</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formazione</h2>
+
+      <div class="education-item">
+        <div class="date">07/2021</div>
+        <div class="degree">Corso CRM Microsoft – Dynamics 365</div>
+        <div class="school">R&S Management, Ariccia (Roma)</div>
+      </div>
+
+      <div class="education-item">
+        <div class="date">12/2018 – 03/2019</div>
+        <div class="degree">Corso Big Data Analytics</div>
+        <div class="school">Forma Camera, Roma</div>
+      </div>
+
+      <div class="education-item">
+        <div class="date">09/1983 – 07/1989</div>
+        <div class="degree">Diploma di Perito in Telecomunicazioni</div>
+        <div class="school">Istituto Tecnico Industriale "Giancarlo Vallauri", Roma</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lingue</h2>
+      <p><strong>Italiano:</strong> madrelingua<br>
+      <strong>Inglese:</strong> livello B2 (QCER)</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Danilo Uzzoli – Curriculum Vitae Online</p>
+    </footer>
+  </div>
+</body>
+</html>
