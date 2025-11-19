@@ -3,229 +3,545 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Danilo Uzzoli - Profilo Professionale</title>
+  <title>Curriculum Vitae - Danilo Uzzoli</title>
   <style>
-    /* Reset & Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    /* Base */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: #333;
-      background-color: #f9f9fb;
-      padding: 20px;
-    }
-    .container {
       max-width: 900px;
       margin: 0 auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      background-color: #fafafa;
     }
-    h1 {
-      color: #1e56a0;
-      margin-bottom: 5px;
-      font-size: 28px;
-    }
-    h2 {
-      color: #1e56a0;
-      margin: 25px 0 15px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #eaeaea;
-      font-size: 22px;
-    }
-    h3 {
-      margin: 15px 0 8px;
+    h1, h2, h3 {
       color: #2c3e50;
     }
-    p, ul {
-      margin-bottom: 10px;
+    h2 {
+      border-bottom: 1px solid #bdc3c7;
+      padding-bottom: 5px;
+      margin: 25px 0 15px;
+      font-size: 20px;
+      color: #2980b9;
     }
-    ul {
-      padding-left: 20px;
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
     }
     .contact-info {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
-      margin: 15px 0 25px;
-      font-size: 15px;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.4;
     }
-    .contact-item {
-      display: flex;
+    .contact-info span {
+      display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
     }
-    .experience-item, .education-item {
+
+    /* Sections */
+    .section {
+      margin-bottom: 25px;
+    }
+    .job, .education-item, .skill-item {
       margin-bottom: 20px;
-      padding-left: 15px;
-      border-left: 3px solid #1e56a0;
-      padding-top: 5px;
     }
-    .date {
-      font-weight: bold;
-      color: #1e56a0;
-    }
-    .role, .degree {
+    .job-date, .education-date {
       font-weight: bold;
       color: #2c3e50;
     }
-    .company, .school {
-      font-style: italic;
-      margin: 3px 0;
+    .job-employer, .education-institution {
+      font-weight: bold;
+      color: #16a085;
     }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    .job-description, .education-description {
+      margin-top: 6px;
+      padding-left: 12px;
+      border-left: 3px solid #ecf0f1;
+    }
+    .job-description ul, .education-description ul {
+      margin: 8px 0;
+      padding-left: 20px;
+    }
+    .job-description li, .education-description li {
+      margin-bottom: 4px;
+    }
+
+    /* Skills table */
+    table.skills {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 10px;
     }
-    .skill-tag {
-      background: #eef4ff;
-      color: #1e56a0;
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-    footer {
-      margin-top: 30px;
+    table.skills th, table.skills td {
+      padding: 6px 8px;
       text-align: center;
-      color: #777;
-      font-size: 14px;
+      border: 1px solid #ccc;
     }
-    a {
-      color: #1e56a0;
-      text-decoration: none;
+    table.skills th {
+      background-color: #f9f9f9;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+
+    /* Footer */
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #7f8c8d;
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
     }
+
+    /* Responsive adjustments */
     @media (max-width: 600px) {
-      .container {
-        padding: 20px;
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
       }
-      h1 { font-size: 24px; }
-      h2 { font-size: 20px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Danilo Uzzoli</h1>
-      <div class="contact-info">
-        <div class="contact-item">📍 Via Massimo Severo Giannini, 23, 00173 Roma</div>
-        <div class="contact-item">📞 +39 328 288 1034</div>
-        <div class="contact-item">✉️ <a href="mailto:danilo.uzzoli@gmail.com">danilo.uzzoli@gmail.com</a></div>
-        <div class="contact-item">💻 <a href="https://github.com/danilouzzoli" target="_blank">github.com/danilouzzoli</a></div>
-      </div>
-    </header>
 
-    <section>
-      <h2>Esperienza Professionale</h2>
-
-      <div class="experience-item">
-        <div class="date">06/2025 – 11/2025</div>
-        <div class="role">Docente in Java – Spring</div>
-        <div class="company">Istituto Meschini srl – Roma</div>
-        <p>Docenza su: Java SE 17, Spring Boot 3, Spring Core 6, Spring MVC, Thymeleaf, Spring JPA, Hibernate, REST, MySQL.</p>
-      </div>
-
-      <div class="experience-item">
-        <div class="date">05/2025 – 06/2025</div>
-        <div class="role">Tutoraggio Tecnico – Full Stack (Java/Spring)</div>
-        <div class="company">Istituto Meschini srl – Roma</div>
-        <p>Tutoraggio per sviluppo di un Portale di Lavoro con tecnologie full stack (Java/Spring/Thymeleaf/Bootstrap/MySQL).</p>
-      </div>
-
-      <div class="experience-item">
-        <div class="date">03/2025 – 05/2025</div>
-        <div class="role">Docente Front-end / Back-end – Spring – Full Stack</div>
-        <div class="company">Istituto Meschini srl – Roma</div>
-        <p>Frontend (HTML, CSS, Bootstrap, Wordpress)</p>
-        <p>Backend Java (JDBC, Jakarta EE, JSP, Servlet, JPA, EJB), Spring Boot 3, REST, Swagger, Maven, Thymeleaf</p>
-      </div>
-
-      <div class="experience-item">
-        <div class="date">01/2024 – 05/2024</div>
-        <div class="role">Docente Java – Spring – Full Stack</div>
-        <div class="company">Et Labora srl – Roma</div>
-        <p>Docenza su Java SE 17, Jakarta EE, Maven, Tomcat 10.1, Thymeleaf, MySQL.</p>
-      </div>
-
-      <div class="experience-item">
-        <div class="date">12/2023</div>
-        <div class="role">Docente Java – Spring</div>
-        <div class="company">Logica Informatica srl – Roma</div>
-        <p>Focus su Spring Boot 3, REST, JPA, Hibernate, Thymeleaf, MySQL.</p>
-      </div>
-
-      <div class="experience-item">
-        <div class="date">10/2023 – 11/2023</div>
-        <div class="role">Tutor Tecnico</div>
-        <div class="company">Fondazione Et Labora – Roma</div>
-        <p>Supporto allo sviluppo di un gestionale di magazzino con stack Java/Spring/Thymeleaf/MySQL.</p>
-      </div>
-
-      <!-- Altre esperienze importanti possono essere aggiunte a richiesta -->
-    </section>
-
-    <section>
-      <h2>Competenze Tecniche</h2>
-      <div class="skills">
-        <span class="skill-tag">Java SE 8/17</span>
-        <span class="skill-tag">Spring Boot 3</span>
-        <span class="skill-tag">Spring Core / MVC / REST / JPA</span>
-        <span class="skill-tag">Hibernate</span>
-        <span class="skill-tag">Jakarta EE (JSP, Servlet, JPA, EJB)</span>
-        <span class="skill-tag">MySQL / PostgreSQL</span>
-        <span class="skill-tag">Maven</span>
-        <span class="skill-tag">Thymeleaf</span>
-        <span class="skill-tag">HTML5 / CSS3 / Bootstrap 5</span>
-        <span class="skill-tag">Git / GitHub</span>
-        <span class="skill-tag">Eclipse / VS Code</span>
-        <span class="skill-tag">Tomcat / TomEE</span>
-        <span class="skill-tag">REST / SOAP</span>
-        <span class="skill-tag">JUnit</span>
-        <span class="skill-tag">SEO / WordPress / WooCommerce</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Formazione</h2>
-
-      <div class="education-item">
-        <div class="date">07/2021</div>
-        <div class="degree">Corso CRM Microsoft – Dynamics 365</div>
-        <div class="school">R&S Management, Ariccia (Roma)</div>
-      </div>
-
-      <div class="education-item">
-        <div class="date">12/2018 – 03/2019</div>
-        <div class="degree">Corso Big Data Analytics</div>
-        <div class="school">Forma Camera, Roma</div>
-      </div>
-
-      <div class="education-item">
-        <div class="date">09/1983 – 07/1989</div>
-        <div class="degree">Diploma di Perito in Telecomunicazioni</div>
-        <div class="school">Istituto Tecnico Industriale "Giancarlo Vallauri", Roma</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Lingue</h2>
-      <p><strong>Italiano:</strong> madrelingua<br>
-      <strong>Inglese:</strong> livello B2 (QCER)</p>
-    </section>
-
-    <footer>
-      <p>© 2025 Danilo Uzzoli – Curriculum Vitae Online</p>
-    </footer>
+  <!-- INTESTAZIONE -->
+  <div class="header">
+    <h1>Danilo Uzzoli</h1>
+    <div class="contact-info">
+      <span>📍 Via Massimo Severo Giannini, 23, 00173 Roma</span>
+      <span>📱 +39 328 288 1034</span>
+      <span>✉️ danilo.uzzoli@gmail.com</span>
+      <span>🔗 <a href="https://danilouzzoli.github.io/index.html" target="_blank">Portfolio</a></span>
+      <span>📅 03/08/1969</span>
+    </div>
   </div>
+
+  <!-- ESPERIENZA PROFESSIONALE -->
+  <h2>Esperienza Professionale</h2>
+  <div class="section">
+
+    <div class="job">
+      <div class="job-date">06/2025 – 11/2025</div>
+      <div class="job-employer">Docente in Java – Spring – Istituto Meschini srl - Roma</div>
+      <div class="job-description">
+        <p><strong>Attività di docenza:</strong> Backend con Java SE v.17, Spring Boot 3, Spring Core 6, Spring MVC, Thymeleaf, Spring JPA, Hibernate. Database: MySQL.</p>
+        <p><em>Ambiente sviluppo: Visual Studio Code</em></p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">05/2025 – 06/2025</div>
+      <div class="job-employer">Tutor con tecnologie Java – Spring – Full Stack, Istituto Meschini srl - Roma</div>
+      <div class="job-description">
+        <p>Tutoraggio per un gruppo di discenti in fase di stage: sviluppato progetto web Portale di lavoro con tecnologie:</p>
+        <ul>
+          <li><strong>Backend:</strong> Java SE 17, Spring Boot 3, Spring Core 6, Spring MVC, Thymeleaf, Spring JPA, Hibernate</li>
+          <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap 5</li>
+          <li><strong>Database:</strong> MySQL</li>
+        </ul>
+        <p><em>Ambiente sviluppo: VSC</em></p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">03/2025 – 05/2025</div>
+      <div class="job-employer">Docenza Java – Spring – Full Stack, Istituto Meschini srl - Roma</div>
+      <div class="job-description">
+        <p>Docenza su: Java SE 17 (lambda, stream, functional interface), JDBC, Logback, Jakarta EE (JSP, Servlet, JSTL, JPA, EJB, DAO, Persistence Context, Entity Manager, TomEE 10.1), MySQL (DML, DDL, SQL, subquery, join, stored procedure, transazioni), Spring Boot 3, Spring Core 6, Spring MVC, Spring REST, Spring JPA, Hibernate, Swagger/OpenAPI, Postman. IDE: Eclipse, Maven. Frontend: Thymeleaf, HTML5, CSS3, Bootstrap 5.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">06/2024 – 11/2024</div>
+      <div class="job-employer">Docenza Java – Spring – Full Stack, Istituto Meschini srl - Roma</div>
+      <div class="job-description">
+        <p>Contenuti analoghi al corso 03/2025–05/2025, con enfasi su Jakarta EE, Spring e MySQL.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">01/2024 – 05/2024</div>
+      <div class="job-employer">Docenza Java – Spring – Full Stack, Et Labora srl - Roma</div>
+      <div class="job-description">
+        <p>Java SE 17 (lambda, stream, functional interface), JDBC, Jakarta EE (JSP, Servlet, JSTL), Maven, Tomcat 10.1, MySQL. Frontend: Thymeleaf, HTML, CSS, Bootstrap. Ampie esercitazioni pratiche.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">12/2023</div>
+      <div class="job-employer">Docenza Java - Spring, Logica Informatica srl - Roma</div>
+      <div class="job-description">
+        <p>Java SE, Spring REST/MVC, Maven, Spring Boot 3, Spring Framework, Spring Data JPA, Hibernate, Thymeleaf, HTML, CSS, Bootstrap, MySQL.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">10/2023 – 11/2023</div>
+      <div class="job-employer">Tutor Tecnico, Fondazione Et Labora - Roma</div>
+      <div class="job-description">
+        <p>Tutoraggio per lo sviluppo di un gestionale di magazzino (progetto discusso in commissione). Tecnologie: Maven, Spring Boot 3, Spring Framework, Spring REST, Spring Data JPA, Spring MVC, Hibernate, Thymeleaf, HTML, CSS, Bootstrap, MySQL.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">09/2023 – 10/2023</div>
+      <div class="job-employer">Docente Java - Spring, Fondazione Et Labora - Roma</div>
+      <div class="job-description">
+        <p>Argomenti: Maven, Spring Boot 3, Spring Framework, Spring REST, Spring Data JPA, Spring MVC, MySQL.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">01/2023 – 06/2023</div>
+      <div class="job-employer">Docente Java, Fondazione Et Labora - Roma</div>
+      <div class="job-description">
+        <p>Java Standard Edition 8, con Threads e programmazione funzionale (Lambda, Streams, Functional Interface).</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">10/2022 – 01/2023</div>
+      <div class="job-employer">Docente Java - Spring, LabForTraining Srl - Roma</div>
+      <div class="job-description">
+        <p>Java SE 8 (lambda, stream), Java EE (JSP, Servlet, JDBC, EJB, JPA, REST), MySQL 8, HTML, CSS, Spring 5 (Core, MVC, JPA, Data, JDBC, AOP, Security, Boot), Maven.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">04/2022 – 06/2022</div>
+      <div class="job-employer">Docente Java - Spring, Clariter Srl – Roma</div>
+      <div class="job-description">
+        <p>Java 8 SE (programmazione funzionale), Java EE (JSP, Servlet, JDBC, EJB, JPA, REST), MySQL 5, SQL, HTML, CSS, Maven, Spring 5 (Core, MVC, Boot).</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">10/2021 – 03/2022</div>
+      <div class="job-employer">Tutor Tecnico Java - Spring, Epicode School Srl</div>
+      <div class="job-description">
+        <p>Supporto discenti. Argomenti: Java SE 8, Java EE (JSP, Servlet, SQL, EJB, JPA, JPQL, JDBC), Spring 5 (Core, MVC, Security, REST, Boot, Data), Maven, REST/SOAP, Microservizi, Crittografia, CORS, JUnit, GitHub, PostgreSQL, Eclipse EE, Docker.</p>
+        <p>Pattern: DAO, MVC, Singleton, Adapter, DTO.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">02/2021 – 05/2021</div>
+      <div class="job-employer">Docente Java - Spring, IFOA – Ente Formatore</div>
+      <div class="job-description">
+        <p>Java SE 8, Java EE (JSP, Servlet, Hibernate 5, EJB, JPA, REST), Spring 5 (Core, MVC, REST, Boot), Tomcat 9, MySQL, Maven.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">01/2020 – 10/2020</div>
+      <div class="job-employer">Docente Java - Spring, MVC Technology S.p.A. – Roma</div>
+      <div class="job-description">
+        <p>Gestione aula corsi. Argomenti: Java SE 8, Java EE (JSP, Servlet, JDBC, EJB, JPA, REST), Maven, Spring 5 (MVC, JPA, REST, Boot, Security), Hibernate 5, Tomcat 9, TomEE 9, MySQL.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">03/2019 – 07/2019</div>
+      <div class="job-employer">Stage - Developer Java, INTENT S.R.L, Roma</div>
+      <div class="job-description">
+        <p>Sviluppo gestionale per controllo scadenza documenti (azienda farmaceutica). Tecnologie: Spring 5 MVC, Hibernate 5, MySQL 5, JSP, HTML, CSS, Bootstrap 4, Maven, Apache Tiles.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">12/2018 – 03/2019</div>
+      <div class="job-employer">Corso Big Data Analytics, Forma Camera, Roma</div>
+      <div class="job-description">
+        <p>Vedi sezione Istruzione.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">10/2013 – 09/2018</div>
+      <div class="job-employer">Sviluppo Web e attività di Web Marketing – Account</div>
+      <div class="job-description">
+        <p>Progettazione e sviluppo siti web e e-commerce (WordPress, WooCommerce):</p>
+        <ul>
+          <li>servizidigitali.cloud – con WooCommerce e SEO</li>
+          <li>assetnet.it – sito per architetti</li>
+          <li>rometransferstours.com – e-commerce viaggi</li>
+          <li>limousineuara.com – NCC con plugin custom</li>
+          <li>DreamLuxItaly.com – sito lusso (WordPress, MailChimp, SEO, traduzioni)</li>
+          <li>Altri: abpimpianti.com, fantazoosrl.com, enerpoint.it, soluzionigreen.com</li>
+        </ul>
+        <p>Attività: SEO, social (Facebook, LinkedIn), email marketing, gestione hosting con WHMCS, ricerca clienti.</p>
+        <p>Account per: Verisure, Sun System, Enerpoint, ABP Impianti, Prolution, Kimera Hitech (settore sicurezza, energie rinnovabili, app mobile).</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">10/2012 – 06/2013</div>
+      <div class="job-employer">Master sviluppo applicativi su cloud Salesforce.com, Elis ICT Academy, Roma</div>
+      <div class="job-description">
+        <p>Stage: implementazione processo di vendita corsi (prevendita/vendita). Competenze: amministrazione e sviluppo Salesforce.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">03/2011 – 10/2012</div>
+      <div class="job-employer">Collaudi Sistemi Unix, 3S Team Spa, Roma</div>
+      <div class="job-description">
+        <p>Collaudo procedure informatiche su sistemi Unix per Telecom Italia Spa.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">01/2007 – 03/2011</div>
+      <div class="job-employer">Analista Programmatore Java, Solving Team Srl / Scentia Consulting, Roma</div>
+      <div class="job-description">
+        <p>Solving Team: Analista J2EE presso MEF, SO.GE.I, RETIS; sviluppo portale HR.</p>
+        <p>Scentia Consulting: collaudo software e system testing.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">07/2001 – 12/2006</div>
+      <div class="job-employer">Sviluppo Software VB 6.0 / Sistemista Linux / Help Desk, Trama Informatica, Roma</div>
+      <div class="job-description">
+        <p>Aprile–Giugno 2006: Analista VC++ presso Regione Lombardia.</p>
+        <p>Sistemista per Ministeri (Interno, Lavoro): National Schengen, SIRENE.</p>
+        <p>Sviluppo: riconoscimento passaporti, SIDAF Frontiere (VB 6.0, Oracle, Access).</p>
+        <p>Corsi per personale di frontiera e Polizia Scientifica. Help Desk Windows (Interpol).</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">06/1997 – 07/2001</div>
+      <div class="job-employer">Sviluppo ABAP 4 – Sviluppo SAS, I&T Informatica e Telecomunicazioni, Pomezia (Roma)</div>
+      <div class="job-description">
+        <p>Programmatore ABAP moduli MM/FI/SD per Ericsson, Swiss RE, Ferrovie dello Stato.</p>
+        <p>Programmatore SAS presso SAS Institute.</p>
+        <p>Sistemista SAP presso datacenter I&T.</p>
+        <p>Tecnico centrale revisioni Ericsson nel Lazio.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">09/1992 – 06/1997</div>
+      <div class="job-employer">Assistenza Hardware/Software – Segreteria – Cassiere, Biagioli Srl / Olivetti / Agenzia Ippica, Roma</div>
+      <div class="job-description">
+        <p>Biagioli: back office, gestione appuntamenti, fornitori, dati gestionale.</p>
+        <p>Olivetti: tecnico hardware.</p>
+        <p>Agenzia Ippica: sportellista/cassiere.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">01/1990 – 07/1991</div>
+      <div class="job-employer">Assistenza Software e Hardware, Pschool Srl, Roma</div>
+      <div class="job-description">
+        <p>Assistenza su software gestionali scolastici nel Lazio: help desk, backup/restore, assistenza PC/stampanti, formazione utenti.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ISTRUZIONE E FORMAZIONE -->
+  <h2>Istruzione e Formazione</h2>
+  <div class="section">
+
+    <div class="education-item">
+      <div class="education-date">07/2021</div>
+      <div class="education-institution">Corso CRM Microsoft – Dynamics 365, R&S Management, Ariccia (Roma)</div>
+      <div class="education-description">
+        <p>Panoramica su Dynamics 365: Sales, Field Service, Power Automate, Power Apps, Workflow, JavaScript (frontend), C# (backend).</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">12/2018 – 03/2019</div>
+      <div class="education-institution">Corso Big Data Analytics, Forma Camera, Roma</div>
+      <div class="education-description">
+        <p>Programma: Java SE, MySQL, Web Application (JSP, Servlet).</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">09/2018 – 10/2018</div>
+      <div class="education-institution">Corso Alta Formazione: Web & Social Media Marketing, Challenge Network, Roma</div>
+      <div class="education-description">
+        <p>240 ore riconosciute Regione Lazio. Web design, SEO, SEM, Google Ads, email marketing, personal branding, social media.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">04/2018 – 07/2018</div>
+      <div class="education-institution">Formazione Marketing Digitale, Google (Eccellenze Digitali)</div>
+      <div class="education-description">
+        <p>Certificazione ottenuta.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">10/2017 – 02/2018</div>
+      <div class="education-institution">Corso SEO con Attestato, MA.GI.CA. S.r.l, Roma</div>
+      <div class="education-description">
+        <p>Attestato riconosciuto Regione Lazio. Keyword, ottimizzazione on/off-page, indicizzazione, strumenti SEO.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">01/2016</div>
+      <div class="education-institution">Corso Web & Digital Marketing, Future Academy Srl</div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">01/2016 – 03/2016</div>
+      <div class="education-institution">Corso Agente di Commercio, Prolution Srl, Roma</div>
+      <div class="education-description">
+        <p>Tecniche di vendita.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">10/2012 – 04/2013</div>
+      <div class="education-institution">Master: sviluppo applicazioni su Salesforce.com, ELIS ICT Academy, Roma</div>
+      <div class="education-description">
+        <p>Contenuti: Java SE, Database, Salesforce (Apex, Visualforce), UML, HTML/CSS, JSP/Servlet, JavaScript, XML, WebServices, Ajax. Soft skills: leadership, comunicazione, team building. Business: project management, marketing.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">05/2010 – 10/2010</div>
+      <div class="education-institution">Master di Producer TV Digitale, MA.GI.CA. S.r.l., Roma</div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">05/2007 – 08/2007</div>
+      <div class="education-institution">Corso sviluppo applicazioni Web J2EE, Solving Team Srl, Roma</div>
+      <div class="education-description">
+        <p>J2EE, SQL, JDBC, HTML, JavaScript, Servlet, JSP, Struts 2.0, EJB 2.1, Spring MVC, IOC. Pattern: Singleton, DAO, DTO, Business Delegate. Testing, logging, best practices.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">07/1993 – 10/1993</div>
+      <div class="education-institution">Corso Sviluppatore Multilinguaggi, Comune di Roma</div>
+      <div class="education-description">
+        <p>500 ore, riconosciuto Regione Lazio. Linguaggi: C, Clipper 5.0, Pascal, DB2.</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-date">09/1983 – 07/1989</div>
+      <div class="education-institution">Diploma di Perito in Telecomunicazioni, ITIS "Giancarlo Vallauri", Roma</div>
+    </div>
+
+  </div>
+
+  <!-- COMPETENZE PERSONALI -->
+  <h2>Competenze Personali</h2>
+  <div class="section">
+
+    <div class="skill-item">
+      <strong>Lingua madre:</strong> italiano
+    </div>
+
+    <div class="skill-item">
+      <strong>Lingue straniere:</strong>
+      <table class="skills">
+        <tr>
+          <th>Lingua</th>
+          <th>Ascolto</th>
+          <th>Lettura</th>
+          <th>Interazione</th>
+          <th>Produzione orale</th>
+          <th>Scrittura</th>
+        </tr>
+        <tr>
+          <td>Inglese</td>
+          <td>B2</td>
+          <td>B2</td>
+          <td>A2</td>
+          <td>A2</td>
+          <td>B2</td>
+        </tr>
+      </table>
+      <p><em>Livelli: A1/A2 = base, B1/B2 = autonomo, C1/C2 = avanzato (QCER)</em></p>
+    </div>
+
+    <div class="skill-item">
+      <strong>Competenze comunicative:</strong>
+      <p>Piena capacità di relazionarsi con collaboratori, datori di lavoro e clienti. Gestione comunicazione digitale per “Dress for Success” (Facebook, YouTube, LinkedIn).</p>
+    </div>
+
+    <div class="skill-item">
+      <strong>Competenze organizzative e gestionali:</strong>
+      <p>Gestione e coordinamento progetti. Corsi di avviamento per personale di frontiera su applicativo sviluppato autonomamente.</p>
+    </div>
+
+    <div class="skill-item">
+      <strong>Competenze professionali:</strong>
+      <p>Capacità di motivare e riconoscere competenze in contesti software.</p>
+    </div>
+
+    <div class="skill-item">
+      <strong>Competenze digitali (autovalutazione):</strong>
+      <table class="skills">
+        <tr>
+          <th>Elaborazione info</th>
+          <th>Comunicazione</th>
+          <th>Creazione contenuti</th>
+          <th>Sicurezza</th>
+          <th>Risoluzione problemi</th>
+        </tr>
+        <tr>
+          <td>Utente avanzato</td>
+          <td>Utente avanzato</td>
+          <td>Utente avanzato</td>
+          <td>Utente avanzato</td>
+          <td>Utente avanzato</td>
+        </tr>
+      </table>
+      <p>Capacità in: trattative B2B/B2C, marketing digitale, analisi progetti, uso efficace dei social, automazione (MailChimp, Active Campaign), SEO, Google Analytics, WHMCS, cPanel, WordPress, WooCommerce.</p>
+    </div>
+
+    <div class="skill-item">
+      <strong>Altre competenze tecniche:</strong>
+      <p><strong>Sistemi Operativi:</strong> Windows (tutte), Unix (comandi base)</p>
+      <p><strong>Office:</strong> Microsoft Office (ottima conoscenza)</p>
+      <p><strong>Application Server:</strong> Tomcat, TomEE, WildFly, JBoss, WebSphere, Apache</p>
+      <p><strong>Linguaggi:</strong> Pascal, Clipper 5.0, C, VC++, ABAP 4, SAS, VB 6.0, Java</p>
+      <p><strong>Web:</strong> HTML5, CSS3, JavaScript (ECMAScript 6), TypeScript, jQuery, PHP 7, Ajax, Bootstrap 4/5</p>
+      <p><strong>IDE/Tool:</strong> Eclipse, IntelliJ IDEA, Spring Tool Suite 4, Visual Studio Code, NetBeans, JDeveloper, Visual Studio (varie)</p>
+      <p><strong>Versioning:</strong> Git, Subversion, SourceTree</p>
+      <p><strong>Framework:</strong> Spring (Core, MVC, Boot, Security, REST, JPA, AOP, Thymeleaf), Jakarta EE (JSP, Servlet, JPA, EJB), Hibernate</p>
+      <p><strong>Database:</strong> MySQL, PostgreSQL, Oracle</p>
+      <p><strong>Testing:</strong> JUnit</p>
+      <p><strong>CRM & Cloud:</strong> Salesforce (Apex, Visualforce), Microsoft Dynamics 365</p>
+      <p><strong>DevOps:</strong> Docker</p>
+      <p><strong>Pattern:</strong> MVC, DAO, DTO, Singleton, Adapter, Business Delegate</p>
+      <p><strong>SEO & Marketing:</strong> Google Analytics, MailChimp, Active Campaign, Facebook/LinkedIn Ads</p>
+    </div>
+
+  </div>
+
+  <!-- PATENTE E ALTRE INFO -->
+  <h2>Patente di guida</h2>
+  <p>A, B, KB</p>
+
+  <h2>Trattamento dei dati personali</h2>
+  <p>Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 101/2018 e dell’art. 13 GDPR (Regolamento UE 2016/679) ai fini della ricerca e selezione del personale.</p>
+
+  <div class="footer">
+    <p>© Unione europea, 2002–2024 | http://europass.cedefop.europa.eu</p>
+  </div>
+
 </body>
 </html>
